@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 26px;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+
+
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+
+/* Header navBar */
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    margin-top: 1em;
+
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    user-select: none;
+    transition: 1s ease;
+
+
+}
+
+header ul {
+    display: flex;
+    gap: 1em;
+    margin-left: 1em;
+    list-style-type: none;
+}
+
+header a:hover {
+    color: #d35d468c;
+    transition: .9s;
+}
+
+.links {
+    position: fixed;
+    right: 2vw;
+
+}
+
+.links img {
+    width: 34px;
+    height: 34px;
+
+}
+
+
+/* Sections global */
+
+section {
+    height: 100vh;
+    display: flex;
+    scroll-snap-align: start;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    color: white;
+    font-weight: 400;
+}
+
+
+/* Home Page  */
+
+#Home {
+    background-color: green;
+    background: url('assets/images/bh.png') no-repeat center center fixed;
+    background-size: cover;
+
+
+}
+
+#Home h1 {
+    font-weight: 400;
+    z-index: 1;
+    transition: .4s ease;
+
+}
+
+#Home h1:hover {
+    /*     transform: translateY(-20px); */
+    transition: .4s ease;
+}
+
+#Home h4 {
+    font-weight: 400;
+    z-index: 1;
+    transition: .4s ease;
+}
+
+#Home h4:hover {
+    /*     transform: translateY(20px); */
+    transition: .4s ease;
+}
+
+
+/* Project Page */
+
+#Projects {
+    background: linear-gradient(to left bottom, #582e43, #A64238);
+
+
+}
+
+/*
+
+.project-holder {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.project-card {
+    width: 15%;
+    height: 40vh;
+    border-radius: 10px;
+    transition: .9s ease;
+
+
+    background-color: rgba(97, 233, 222, 0);
+    backdrop-filter: blur(1.2px);
+
+}
+
+.project-card p {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    padding: .1em;
+    border-radius: .6em;
+}
+
+.project-card:hover {
+    transform: scale(120%);
+    transform: .4 ease;
+} */
+
+/* PROJECT SIDA */
+
+.project-container {
+    display: flex;
+    gap: 1em;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* h1 p */
+.projects-card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-height: 30vh;
+    height: 35vh;
+    background: linear-gradient(to bottom right, rgba(236, 241, 241, 0.671), rgba(250, 250, 250, 0.705));
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 1em;
+    border-radius: .2em;
+    backdrop-filter: blur(1, 2px);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-left: .4em;
+    justify-content: space-between;
+    margin-right: .4em;
+    transition: .6s ease;
+}
+
+.projects-card:nth-child(4){
+    justify-content: center;
+}
+
+
+
+.projects-card button {
+    border: none;
+    padding: 1em;
+    background: rgb(47, 109, 226);
+    width: 30%;
+
+}
+
+.projects-card button:hover {
+    cursor: pointer;
+}
+
+.projects-card a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.projects-card:hover {
+    transition: .6s ease;
+    transform: scale(103%);
+}
+
+.projects-card:nth-child(3) {
+    background: linear-gradient(to bottom right, rgba(250, 219, 45, 0.671), rgba(250, 250, 250, 0.705));
+}
+
+.projects-card:nth-child(4) {
+    background: linear-gradient(to bottom right, rgba(250, 219, 45, 0.671), rgba(250, 250, 250, 0.705));
+}
+
+.projects-card p {
+    font-size: .6em;
+    color: black;
+    text-align: center;
+}
+
+.projects-card h1 {
+    font-size: .7em;
+    color:black;
+}
+
+.guide {
+    display: flex;
+    gap: 1em;
+    flex-direction: row-reverse;
+    font-size: .8em;
+
+}
+
+.old {
+    background: linear-gradient(to bottom right, rgba(236, 241, 241, 0.671), rgba(250, 250, 250, 0.705));
+    color: black;
+    padding: .4em;
+    border-radius: .2em;
+}
+
+.active {
+    background: linear-gradient(to bottom right, rgba(250, 219, 45, 0.671), rgba(250, 250, 250, 0.705));
+    padding: .4em;
+    color: black;
+    border-radius: .2em;
+}
+
+
+
+
+/* About Page */
+
+#About {
+    border: solid 1px rgba(255, 255, 255, 0.664);
+    display: flex;
+    text-align: center;
+    font-family: 'Poppins', Times, serif;
+    background: linear-gradient(to right bottom, green, rgb(140, 165, 140));
+
+
+}
+
+#About img {
+    width: 42px;
+    height: 42px;
+}
+
+#About p {
+    width: 60%;
+    letter-spacing: .1em;
+    font-size: .8em;
+
+
+}
+
+.icons {
+    display: flex;
+    gap: 1em;
+}
+
+.icons img {
+    width: 54px;
+    height: 54px;
+}
+
+
+/* CV Page */
+
+#Cv {
+    background: linear-gradient(to left bottom, #582e43, #A64238);
+}
+
+
+#cv-bild {
+    border-radius: 50%;
+    width: 3.5em;
+    height: 3.5em;
+}
+
+
+.cv-container {
+    width: 60%;
+    margin-top: 4em;
+    height: 91vh;
+
+    display: flex;
+    font-size: .7em;
+    justify-content: flex-end;
+    transition: .4s ease;
+
+
+
+
+}
+
+
+.main-content {
+    display: flex;
+    background-color: #fcf7f9;
+    width: 100%;
+    color: black;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    flex-direction: column;
+    font-size: .7em;
+    font-family: 'Poppins', sans-serif;
+    justify-content: flex-start;
+
+
+}
+
+.header-cv {
+    display: flex;
+    margin-left: 2em;
+    margin-top: 2em;
+
+}
+
+.text-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+.card-content {
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+
+
+.card-content p {
+    font-size: 15px;
+    width: 80%;
+}
+
+
+
+.card-content h6 {
+    font-weight: 400;
+    color: rgba(128, 128, 128, 0.781);
+    font-size: 1em;
+}
+
+worktitle {
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+
+
+
+.sidebar {
+    background-color: rgb(19, 35, 75);
+    height: 100%;
+    width: 28%;
+    color: white;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: .9em;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: rgb(31, 201, 158);
+    transition: .4s ease;
+}
+
+.sidebar a:hover {
+    color: rgb(236, 236, 241);
+    transform: .4s ease;
+}
+
+.bar {
+    width: 80%;
+    background-color: rgba(128, 109, 109, 0.507);
+    height: .5em;
+    border-radius: 1em;
+}
+
+.barfill-swedish {
+    width: 100%;
+    background-color: white;
+    height: .5em;
+    border-radius: 1em;
+}
+
+.barfill-english {
+    width: 60%;
+    background-color: white;
+    height: .5em;
+    border-radius: 1em;
+}
+
+.sidebar side-card:nth-child(1) {
+    margin-top: 2em
+}
+
+.side-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lastcard-sidebar {
+    margin-top: 3em;
+}
+
+
+
+
+
+
+
+/* Mobile and or larger screen */
+
+@media screen and (max-width: 900px) {
+
+    header ul {
+        display: none;
+
+    }
+
+
+    #About p {
+        font-size: .4em;
+        width: 90%;
+    }
+
+    .icons img {
+        width: 24px;
+        height: 24px;
+
+    }
+
+    .project-holder {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .project-card {
+        display: flex;
+        align-items: center;
+        height: 30%;
+        width: 80%;
+    }
+
+    .project-card img {
+        min-width: 60%;
+        max-width: 60%;
+    }
+
+    .project-card p {
+        font-size: .5em;
+        text-align: center;
+    }
+
+    .sidebar {
+
+        font-size: .9em;
+
+        height: 100%;
+        width: 100%;
+
+        border-bottom-right-radius: 1em;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1em;
+        padding-bottom: 1em;
+    }
+
+    .main-content {
+        overflow: scroll;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1em;
+    }
+
+    .links {
+        margin-right: 2vw;
+        margin-top: -5vw;
+    }
+
+
+    .cv-container {
+        width: 90%;
+        transition: .4s ease;
+        flex-direction: column;
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width:2400px) {
+    .main-content {
+        font-size: .57em;
+    }
+
+    .main-content p {
+        font-size: larger;
+    }
+
+    .cv-container {
+        width: 90%;
+        margin-top: 3em;
+    }
+
+    .project-card {
+        width: 25%;
+    }
+
+    .sidebar {
+        font-size: .65em;
+    }
+
+    html {
+        font-size: 50px;
+    }
+
+
+}
+
+@media screen and (max-width:1500px) {
+    .main-content {
+        overflow: scroll;
+    }
+
+}
+
+@media screen and (max-height: 900px) {
+
+    .sidebar {
+        overflow: scroll;
+        text-align: center;
+    }
+
+    .cv-container {
+        transition: .4s ease;
+        height: 80vh;
+    }
+
+    .main-content {
+        overflow: scroll;
+    }
+
+}
