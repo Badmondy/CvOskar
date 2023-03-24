@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://kit.fontawesome.com/5605743a65.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+
     <title>Document</title>
 </head>
 
 <body>
+
+
     <div class="container">
+
+
         <header>
             <ul>
                 <li> <a href="#Home">Hem</a></li>
@@ -25,35 +29,30 @@
                 <a href="https://github.com/Badmondy" target="_blank"> <img src="assets/images/github.png" alt=""> </a>
                 <a href="https://www.linkedin.com/in/oskar-markbäck-zeilon-139b2114b/" target="_blank"><img
                         src="assets/images/linkedin.png" alt=""></a>
+                <a href="eng.html"> <img src="assets/images/usa.png" alt=""> </a>
             </div>
+
+
+
         </header>
+
+
+
         <section id="Home">
+
             <h1>Oskar Markbäck Zeilon</h1>
             <h4>oskarmarkback@gmail.com</h4>
+            <div class="mobile-menu">
+                <button id="mobile-btn"><i class="fa-solid fa-bars fa-xl"></i></button>
+                <ul id="menu">
+                    <li><a href="#Home" class="close-menu">Home</a></li>
+                    <li><a href="#About" class="close-menu">About</a></li>
+                    <li><a href="#Projects" class="close-menu">Projects</a></li>
+                    <li><a href="#Cv"   class="close-menu">CV</a></li>
+                </ul>
+            </div>
         </section>
         <section id="Projects">
-
-            <!--    <div class="project-holder">
-                <div class="project-card">
-                    <img src="assets/images/electric.jpg" alt="">
-                    <p>Vi skapade ett system för automatisk tankning med elbil</p>
-
-                </div>
-                <div class="project-card">
-                    <img src="assets/images/computer.jpg" alt="">
-                    <p>Vi skapade organisation för Microsoft</p>
-
-                </div>
-
-
-
-                <div class="project-card">
-                    <img src="assets/images/tree.jpg" alt="">
-                    <p>Automatisk övervakning i trädhuset</p>
-
-                </div> -->
-
-
             <div class="project-container">
 
 
@@ -61,23 +60,36 @@
                 <div class="projects-card">
                     <h1> Webbkarta gräslöken</h1>
                     <p>Fick i uppdrag att utveckla deras områdeskarta för boende och förvaltning.
-                      Innan var kartan långsam och användarvänligheten ansågs låg.</p>
-                      <div class="button-holder"> <a href="https://brfgrasloken.maps.arcgis.com/apps/webappviewer/index.html?id=d693cbdaf3b4496583300324dffc74db" target="_blank" rel="noopener noreferrer"><button> Live länk</button></a></div>
+                        Innan var kartan långsam och användarvänligheten ansågs låg.</p>
+                    <div class="button-holder"> <a
+                            href="https://brfgrasloken.maps.arcgis.com/apps/webappviewer/index.html?id=d693cbdaf3b4496583300324dffc74db"
+                            target="_blank" rel="noopener noreferrer"><button> Live länk</button></a></div>
                 </div>
 
                 <div class="projects-card">
                     <h1>Webbkarta på en raspberry Pi</h1>
                     <p>Går det att driva en webbkarta för kommun på endast en raspberry Pi?
                     </p>
-                    <div class="button-holder"> <a href="https://oskarzz.com/ztech" target="_blank" rel="noopener noreferrer"><button> Live länk</button></a></div>
+                    <div class="button-holder"> <a href="https://oskarzz.com/ztech" target="_blank"
+                            rel="noopener noreferrer"><button> Live länk</button></a></div>
 
                 </div>
 
 
+
+
                 <div class="projects-card">
                     <h1>Nyhetssida i react - Happy News</h1>
-                    <p>Happy News är en digital nyhetssida som fokuserar på positiva och upplyftande nyheter. Vi använder oss av algoritmer och webscraping-teknik för att samla in artiklar från olika nyhetssajter och filtrerar bort potentiellt stötande innehåll. Vi strävar efter att skapa en plattform där läsare kan finna ett andningsrum.</p>
+                    <p>Happy News är en digital nyhetssida som fokuserar på positiva och upplyftande nyheter. Vi
+                        använder oss av algoritmer och webscraping-teknik för att samla in artiklar från olika
+                        nyhetssajter och filtrerar bort potentiellt stötande innehåll. Vi strävar efter att skapa en
+                        plattform där läsare kan finna ett andningsrum.</p>
 
+                </div>
+
+                <div class="projects-card">
+                    <h1>Skriva om denna hemsida i Vue</h1>
+                    <p>Migrera denna portfolio till Vue
                 </div>
 
                 <div class="projects-card">
@@ -98,12 +110,12 @@
 
         </section>
         <section id="About">
-            <p>Blivande .NET Utvecklare med intresse för VUE.js <img src="assets/images/icons8-vue-js-480.png" alt="">
-            </p>
+            <h2>Blivande .NET Utvecklare med intresse för VUE.js
+            </h2>
 
             <p>Hej, mitt namn är Oskar Markbäck Zeilon boende på landet utanför
-                Hässleholm med sambo och hund.
-                Ursprungligen från Stockholm, även bott i Halmstad under några år. Det var
+                Hässleholm med sambo och hund,
+                ursprungligen är jag från Stockholm. Det var
                 dock här i Hässleholm som jag fann tid till att vidareutbilda mig. Jag
                 gick folkhögskola för att sedan läsa vidare inom GIS (Geografiska
                 informationssystem).</p>
@@ -179,7 +191,6 @@
 
                     <div class="card-content">
                         <worktitle>Budförare, Vittsjö transport & Bud, Hässleholm</worktitle>
-
                         <h6>FEBRUARI 2019 - NUVARANDE</h6>
                         <p> Kör ut mat mellan kök och äldreboende med 8-pallars lastbil.</p>
 
@@ -286,6 +297,7 @@
 
     </div>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
