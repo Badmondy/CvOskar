@@ -108,7 +108,7 @@ section {
 #Home {
     background-color: green;
     /* background: url('assets/images/bh.png') no-repeat center center fixed; */
-    background-color: yellow;
+    background-color: rgb(67, 148, 60);
     background-size: cover;
 
 }
