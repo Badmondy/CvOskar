@@ -40,7 +40,7 @@ header a {
     text-decoration: none;
     color: white;
     user-select: none;
-    transition: 1s ease;
+    transition: .2s ease;
 
 
 }
@@ -107,7 +107,8 @@ section {
 
 #Home {
     background-color: green;
-    background: url('assets/images/bh.png') no-repeat center center fixed;
+    /* background: url('assets/images/bh.png') no-repeat center center fixed; */
+    background-color: yellow;
     background-size: cover;
 
 }
