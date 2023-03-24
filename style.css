@@ -462,6 +462,7 @@ MOBILE MENU */
     background-color: rgba(255, 0, 0, 0);
     border: none;
     padding:.5em;
+    cursor:pointer;
 }
 
 .mobile-menu button:hover {
@@ -473,8 +474,8 @@ MOBILE MENU */
     display: none;
     font-size:.7em;
     border-radius:.3em;
-    width:30vh;
-    flex-direction: column;
+    gap:1em;
+    flex-direction: row;
 
 
 
@@ -482,7 +483,7 @@ MOBILE MENU */
 
 #menu a {
     text-decoration: none;
-    color:black;
+    color:white;
     transition: .4s ease;
 }
 
@@ -490,6 +491,7 @@ MOBILE MENU */
     text-decoration: none;
     color: #d35d468c;
     transition: .4s ease;
+    cursor:pointer;
 }
 
 
@@ -504,6 +506,7 @@ MOBILE MENU */
         display: none;
 
     }
+
 
     #About h2 {
         font-size: .8em;
@@ -523,14 +526,14 @@ MOBILE MENU */
 
     .project-container {
         flex-direction: column-reverse;
-        height: 90vh;
+        height: 70vh;
         gap: 0;
 
     }
 
     .projects-card {
-        width: 80%;
-        height:25%;
+        width: 60%;
+        height:25vh;
         font-size: .75em;
         padding: .2em;
         align-self: center;
@@ -572,7 +575,7 @@ MOBILE MENU */
     .links {
         margin-right: 2vw;
         margin-top: -3vw;
-        flex-direction: column;
+
     }
 
     .links img {

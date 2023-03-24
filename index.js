@@ -7,18 +7,19 @@ const menu = document.getElementById('menu')
 const closeMenu = document.querySelectorAll('.close-menu');
 
 
+
+
+
 let count = 0;
-
-
 
 closeMenu.forEach(closeMenu => {
 
     closeMenu.addEventListener('click', () => {
 
         menu.style.display = 'none'
+        count = 0;
     });
 });
-
 
 
 
