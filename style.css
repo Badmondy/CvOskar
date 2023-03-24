@@ -110,30 +110,21 @@ section {
     background: url('assets/images/bh.png') no-repeat center center fixed;
     background-size: cover;
 
-
 }
 
 #Home h1 {
     font-weight: 400;
     z-index: 1;
-    transition: .4s ease;
+
 
 }
 
-#Home h1:hover {
-    /*     transform: translateY(-20px); */
-    transition: .4s ease;
-}
+
 
 #Home h4 {
     font-weight: 400;
     z-index: 1;
-    transition: .4s ease;
-}
 
-#Home h4:hover {
-    /*     transform: translateY(20px); */
-    transition: .4s ease;
 }
 
 
