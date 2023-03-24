@@ -500,6 +500,9 @@ MOBILE MENU */
 
 /* Mobile and or larger screen */
 
+
+
+
 @media screen and (max-width: 1050px) {
 
     header ul {
@@ -509,11 +512,11 @@ MOBILE MENU */
 
 
     #About h2 {
-        font-size: .8em;
+        font-size: .6em;
     }
 
     #About p {
-        font-size: .5em;
+        font-size: .4em;
         width: 90%;
     }
 
@@ -526,19 +529,26 @@ MOBILE MENU */
 
     .project-container {
         flex-direction: column-reverse;
-        height: 70vh;
-        gap: 0;
+        height:70vh;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
 
     }
 
     .projects-card {
-        width: 60%;
-        height:25vh;
-        font-size: .75em;
-        padding: .2em;
-        align-self: center;
-        transform: scale(85%);
+        width: 90%;
+        display:flex;
+        justify-content: center;
+        font-size: .35em;
+
     }
+
+
+
+
+
 
     .guide {
         display: none;
